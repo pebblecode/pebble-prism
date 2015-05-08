@@ -18,12 +18,12 @@ function groupBy (key, data) {
 
 
 exports.update = function update(networkData) {
+  var deviceCoordinates = [];
+  var devicesByOS = groupBy('os', networkData.data.observations);
+
   var data = {
     accessPointMac: networkData.data.apMac
   };
-
-  var deviceCoordinates = [];
-  var devicesByOS = groupBy('os', networkData.data.observations);
 
   _.forEach(networkData.data.observations, function (item) {
 
@@ -40,7 +40,7 @@ exports.update = function update(networkData) {
 
   data.deviceCount = networkData.data.observations.length;
   data.devicesByOS = devicesByOS;
-  data.deviceCoordinates = deviceCoordinate;
+  data.deviceCoordinates = deviceCoordinates;
 
   return data;
 }
