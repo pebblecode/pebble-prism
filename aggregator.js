@@ -18,17 +18,13 @@ function groupBy (key, data) {
 
 
 exports.update = function update(networkData) {
-
-  var data = {
-    devicesByOS: {},
-    deviceCoordinates: []
-  };
-
-  data.devicesByOS = groupBy('os', networkData.data.observations);
+  var data = {};
+  var deviceCoordinates = [];
+  var devicesByOS = groupBy('os', networkData.data.observations);
 
   _.forEach(networkData.data.observations, function (item) {
     if (item.clientMac) {
-      data.deviceCoordinates.push({
+      deviceCoordinates.push({
         clientMac: item.clientMac,
         lat: item.location.lat,
         lng: item.location.lng,
@@ -37,5 +33,10 @@ exports.update = function update(networkData) {
     }
   });
 
-  return {networkData.apMac: data};
+  data[networkData.apMac] = {
+    byOS: devicesByOS,
+    coords: deviceCoordinates
+  };
+
+  return data;
 }
