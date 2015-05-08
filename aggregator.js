@@ -18,7 +18,10 @@ function groupBy (key, data) {
 
 
 exports.update = function update(networkData) {
-  var data = {};
+  var data = {
+    accessPointMac: networkData.data.apMac
+  };
+
   var deviceCoordinates = [];
   var devicesByOS = groupBy('os', networkData.data.observations);
 
@@ -34,11 +37,10 @@ exports.update = function update(networkData) {
     }
   });
 
-  data[networkData.data.apMac] = {
-    count: networkData.data.observations.length,
-    byOS: devicesByOS,
-    coords: deviceCoordinates
-  };
+
+  data.deviceCount = networkData.data.observations.length;
+  data.devicesByOS = devicesByOS;
+  data.deviceCoordinates = deviceCoordinate;
 
   return data;
 }
