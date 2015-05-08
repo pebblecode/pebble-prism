@@ -25,7 +25,7 @@ exports.update = function update(networkData) {
     deviceCoordinates: []
   };
 
-  data.devicesByAccessPoint = groupBy('clientMac', networkData.data.observations);
+  // data.devicesByAccessPoint = groupBy('clientMac', networkData.data.observations);
   data.devicesByOS = groupBy('os', networkData.data.observations);
 
   _.forEach(networkData.data.observations, function (item) {
