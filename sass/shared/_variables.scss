@@ -6,7 +6,11 @@ $paper: white;
 $ink: #263238;
 
 $blue: #276fdc;
-$primary: $blue;
+$red: #e22d00;
+$yell: darken(#f4ce00, 1);
+$green: #1bb610;
+$aqua: #00aedb;
+
 
 // TYPOGRAPHY
 $base-font-size: 14px;
@@ -26,6 +30,7 @@ $gamma: 22px;
 $delta: 16px;
 $epsilon: 14px;
 $zeta: 12px;
+
 
 // SPACING: Grid, Viewports etc
 $large: 1000px;
