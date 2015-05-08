@@ -70,6 +70,7 @@ var devicesLayerGroup = L.layerGroup(null);
 var es = new EventSource('/subscribe');
 es.onmessage = function (e) {
   devicesLayerGroup.clearLayers();
+
   var msg = JSON.parse(e.data);
   _.each(msg.deviceCoordinates, function (coord) {
     var marker = L.circleMarker([coord.lat, coord.lng]).addTo(map);
@@ -77,3 +78,4 @@ es.onmessage = function (e) {
   });
 };
 
+devicesLayerGroup.addTo(map);
