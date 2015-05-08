@@ -27,6 +27,8 @@ app.post('/meraki', function (req, res) {
   try {
 
     if (req.body.secret === secret) {
+      console.log(req.body);
+
       data = aggregator.update(req.body);
 
       if (clients.length) {
