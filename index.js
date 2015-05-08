@@ -1,6 +1,6 @@
 // 192.168.3.63
 
-var listenport = 9201;                      //TCP listening port
+var listenport = process.env.PORT || 9201;                      //TCP listening port
 var secret = "xxxxxx";                      //Secret that you chose in the Meraki dashboard
 var validator = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";    //Validator string that is shown in the Meraki dashboard
 
