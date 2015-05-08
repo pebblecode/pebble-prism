@@ -1,0 +1,740 @@
+/* line 5, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 12, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+body {
+  margin: 0; }
+
+/* line 31, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/* line 40, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/* line 47, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 55, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* line 63, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+a {
+  background: transparent; }
+
+/* line 69, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* line 77, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 83, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+b, strong {
+  font-weight: 600; }
+
+/* line 88, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 93, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 99, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 105, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 111, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 118, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 122, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 130, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 135, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 143, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 148, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 155, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/* line 163, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 182, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 189, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 198, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/* line 208, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/* line 215, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/* line 221, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 228, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 238, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 247, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 253, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 263, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 268, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 276, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 282, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/* line 288, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+optgroup {
+  font-weight: 600; }
+
+/* line 296, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 302, /Users/pebblecode/Repos/pebble-prism/sass/shared/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/* line 6, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+.fadein {
+  -webkit-animation: fadein 1s;
+  animation: fadein 1s; }
+
+@-webkit-keyframes fadein {
+  /* line 8, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 9, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  100% {
+    opacity: 1; } }
+
+@keyframes fadein {
+  /* line 8, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  0% {
+    opacity: 0; }
+
+  /* line 9, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  100% {
+    opacity: 1; } }
+
+/* line 14, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+.fadeout {
+  -webkit-animation: fadeout 1s;
+  animation: fadeout 1s; }
+
+@-webkit-keyframes fadeout {
+  /* line 16, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 17, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeout {
+  /* line 16, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 17, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  100% {
+    opacity: 0; } }
+
+/* line 22, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+.pulse {
+  -webkit-animation: pulse 0.6s infinite alternate;
+  animation: pulse 0.6s infinite alternate; }
+
+@-webkit-keyframes pulse {
+  /* line 24, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  /* line 25, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  to {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06); } }
+
+@keyframes pulse {
+  /* line 24, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  /* line 25, /Users/pebblecode/Repos/pebble-prism/sass/shared/_animations.scss */
+  to {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06); } }
+
+/* line 6, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+*, *::before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+/* line 16, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+/* line 24, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+body {
+  background-color: #276fdc;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.4;
+  color: #263238; }
+
+/* line 33, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+.grid {
+  clear: both;
+  margin: 0 auto;
+  max-width: 1200px; }
+  /* line 9, /Users/pebblecode/Repos/pebble-prism/sass/shared/_mixins.scss */
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 39, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+.padded {
+  padding: 20px; }
+
+/* line 43, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px; }
+
+/* line 49, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+.col-1-1 {
+  width: 100%; }
+
+/* line 50, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+.col-2-3 {
+  width: 66.66%; }
+
+/* line 51, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+.col-1-3 {
+  width: 33.33%; }
+
+/* line 52, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+.col-1-2 {
+  width: 50%; }
+
+/* line 53, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+.col-1-4 {
+  width: 25%; }
+
+/* line 54, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+.col-1-8 {
+  width: 12.5%; }
+
+@media screen and (max-width: 500px) {
+  /* line 57, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+  [class*='col-'] {
+    width: 100%;
+    float: none; }
+  /* line 66, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+  .mobile-col-2-3, .mobile-col-1-3, .mobile-col-1-2, .mobile-col-1-4, .mobile-col-1-8 {
+    float: left; }
+  /* line 70, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+  .mobile-col-2-3 {
+    width: 66.66%; }
+  /* line 71, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+  .mobile-col-1-3 {
+    width: 33.33%; }
+  /* line 72, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+  .mobile-col-1-2 {
+    width: 50%; }
+  /* line 73, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+  .mobile-col-1-4 {
+    width: 25%; }
+  /* line 74, /Users/pebblecode/Repos/pebble-prism/sass/shared/_layout.scss */
+  .mobile-col-1-8 {
+    width: 12.5%; } }
+
+/* line 5, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre, button {
+  margin: 0 0 18px 0; }
+
+/* line 10, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+.tera {
+  font-size: 86px; }
+
+/* line 11, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+.giga {
+  font-size: 60px; }
+
+/* line 12, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+.mega {
+  font-size: 48px; }
+
+/* line 13, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+.alpha {
+  font-size: 36px; }
+
+/* line 14, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+.beta {
+  font-size: 24px; }
+
+/* line 15, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+.gamma {
+  font-size: 22px; }
+
+/* line 16, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+.delta {
+  font-size: 16px; }
+
+/* line 17, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+.epsilon {
+  font-size: 14px; }
+
+/* line 18, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+.zeta {
+  font-size: 12px; }
+
+/* line 21, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600; }
+
+/* line 25, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+h1, h2, h3, .h1, .h2, .h3 {
+  line-height: 1.3; }
+
+/* line 29, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+h1, .h1 {
+  font-size: 48px; }
+
+/* line 33, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+h2, .h2 {
+  font-weight: 100;
+  font-size: 36px; }
+
+/* line 38, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+h3, .h3 {
+  font-size: 24px; }
+
+/* line 42, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+h4, .h4 {
+  font-size: 22px; }
+
+/* line 46, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+h5, .h5 {
+  font-size: 14px; }
+
+/* line 50, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+h6, .h6 {
+  font-size: 12px; }
+
+/* line 54, /Users/pebblecode/Repos/pebble-prism/sass/shared/_typography.scss */
+strong {
+  font-weight: 600; }
+
+/* line 5, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.3); }
+::selection {
+  background: rgba(0, 0, 0, 0.3); }
+
+/* line 10, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+a {
+  color: #263238;
+  text-decoration: none; }
+  /* line 14, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+  a:hover, a.hover {
+    cursor: pointer;
+    color: #3b4d56; }
+  /* line 19, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+  a:active, a.active {
+    color: #11171a; }
+  /* line 23, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+  a.visited {
+    color: #07090a; }
+
+/* line 29, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+.btn, button {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  -webkit-appearance: none; }
+  /* line 36, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+  .btn:focus, button:focus {
+    outline: none; }
+
+/* line 42, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+input, textarea {
+  padding: 10px;
+  display: block;
+  -webkit-appearance: none;
+  border-radius: 0; }
+  /* line 48, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+  input:focus, textarea:focus {
+    outline: none; }
+
+/* line 54, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+img {
+  max-width: 100%; }
+
+/* line 59, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+ol {
+  padding-left: 1.4em; }
+  /* line 62, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+  ol ol, ol ol ol {
+    margin-bottom: 0; }
+
+/* line 67, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+ul {
+  padding: 0;
+  list-style: none; }
+  /* line 71, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+  ul ul, ul ul ul {
+    margin-bottom: 0; }
+
+/* line 76, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+dt {
+  font-weight: 600; }
+
+/* line 80, /Users/pebblecode/Repos/pebble-prism/sass/shared/_elements.scss */
+dd {
+  margin-left: 1.4em; }
+
+/* line 5, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.intro-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(39, 111, 220, 0.98);
+  z-index: 10;
+  -webkit-animation: fadeout 1s 3s;
+  animation: fadeout 1s 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 300px rgba(0, 0, 0, 0.2); }
+
+/* line 18, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.intro-logo {
+  color: transparent;
+  position: absolute;
+  top: 80px;
+  font-size: 1px;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url(../img/logo-white.svg) no-repeat center top;
+  -webkit-background-size: 300px;
+  background-size: 300px;
+  opacity: 0;
+  -webkit-animation: fadein 1s 0.5s;
+  animation: fadein 1s 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+  @media screen and (max-width: 650px) {
+    .intro-logo {
+      top: 60px; } }
+
+/* line 37, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.intro-text {
+  position: absolute;
+  bottom: 40px;
+  padding: 0 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  opacity: 0;
+  -webkit-animation: fadein 1s 0.8s;
+  animation: fadein 1s 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+  @media screen and (max-width: 850px) {
+    .intro-text {
+      font-size: 36px;
+      bottom: 20px;
+      line-height: 1.1; } }
+
+/* line 56, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.intro-hidden-text {
+  position: absolute;
+  font-size: 120.4px;
+  line-height: 0.6;
+  color: rgba(0, 0, 0, 0.1);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: -4px;
+  opacity: 0;
+  -webkit-animation: fadein 2s 2.4s;
+  animation: fadein 2s 2.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+  @media screen and (max-width: 850px) {
+    .intro-hidden-text {
+      font-size: 48px;
+      letter-spacing: -2px;
+      line-height: 0.8; } }
+
+/* line 79, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.map-container {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  background-color: white; }
+  @media screen and (max-width: 650px) {
+    .map-container {
+      height: 250px;
+      width: 100%;
+      left: 0;
+      position: relative; } }
+
+/* line 96, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.data-container {
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  color: white;
+  -webkit-box-shadow: inset 7px 0 7px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 7px 0 7px -7px rgba(0, 0, 0, 0.5); }
+  @media screen and (max-width: 650px) {
+    .data-container {
+      height: auto;
+      width: 100%;
+      left: 0;
+      position: relative; } }
+
+/* line 113, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.data-container-inner {
+  overflow: auto;
+  height: 100%; }
+  @media screen and (max-width: 650px) {
+    .data-container-inner {
+      height: auto; } }
+  /* line 121, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+  .data-container-inner::-webkit-scrollbar {
+    width: 12px;
+    height: 12px; }
+  /* line 126, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+  .data-container-inner::-webkit-scrollbar-track {
+    background-color: #276fdc;
+    -webkit-border-radius: 0; }
+  /* line 131, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+  .data-container-inner::-webkit-scrollbar-thumb {
+    background-color: #194e9d;
+    border: 3px solid #276fdc;
+    -webkit-border-radius: 10px; }
+
+/* line 138, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.data-head {
+  padding: 40px 20px 0; }
+
+/* line 142, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.data-head-logo {
+  color: transparent;
+  margin-bottom: 40px;
+  font-size: 1px;
+  display: block;
+  width: 300px;
+  height: 100px;
+  background: url(../img/logo-white.svg) no-repeat left top;
+  -webkit-background-size: 200px;
+  background-size: 200px; }
+
+/* line 153, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.data-widget-container {
+  clear: both; }
+  /* line 9, /Users/pebblecode/Repos/pebble-prism/sass/shared/_mixins.scss */
+  .data-widget-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 157, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.data-widget {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  margin: 0 20px 50px;
+  width: -webkit-calc(100% - $gutter * 2);
+  width: calc(100% - $gutter * 2); }
+  /* line 163, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+  .data-widget h3 {
+    line-height: 1;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black; }
+  /* line 170, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+  .data-widget span {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 200; }
+    /* line 175, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+    .data-widget span.android {
+      background: url(../img/android.svg) no-repeat left 10px;
+      -webkit-background-size: 30px;
+      background-size: 30px;
+      padding-left: 40px; }
+    /* line 181, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+    .data-widget span.apple {
+      background: url(../img/apple.svg) no-repeat left 8px;
+      -webkit-background-size: 30px;
+      background-size: 30px;
+      padding-left: 40px; }
+
+/* line 189, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.data-widget-col {
+  float: left;
+  margin: 0 20px;
+  width: -webkit-calc(50% - 40px);
+  width: calc(50% - 40px); }
+  @media screen and (max-width: 500px) {
+    .data-widget-col {
+      width: -webkit-calc(100% - 40px);
+      width: calc(100% - 40px); } }
+  /* line 198, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+  .data-widget-col .data-widget {
+    width: 100%;
+    margin: 0 0 50px; }
+
+/* line 204, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.data-widget-list {
+  margin: 0;
+  padding-top: 5px; }
+  /* line 208, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+  .data-widget-list li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    padding: 5px 0 30px; }
+    /* line 213, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+    .data-widget-list li h4 {
+      font-size: 14px;
+      margin: 2px 0 0; }
+    /* line 218, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+    .data-widget-list li span {
+      position: absolute;
+      right: 0;
+      top: 5px;
+      font-size: 24px; }
+
+/* line 228, /Users/pebblecode/Repos/pebble-prism/sass/pages/_home.scss */
+.data-foot {
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 60px 0 0; }
