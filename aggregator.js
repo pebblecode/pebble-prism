@@ -35,6 +35,7 @@ exports.update = function update(networkData) {
   });
 
   data[networkData.data.apMac] = {
+    count: networkData.data.observations.length,
     byOS: devicesByOS,
     coords: deviceCoordinates
   };
