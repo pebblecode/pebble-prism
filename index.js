@@ -1,4 +1,5 @@
-// 192.168.3.63
+// vince: 192.168.3.63
+// paul: 192.168.3.71
 
 var listenport = process.env.PORT || 9201;                      //TCP listening port
 var secret = 'pebbleprism';                      //Secret that you chose in the Meraki dashboard
@@ -7,9 +8,12 @@ var validator = "5637aaef252addd4d6682c7aff3ee877d018ac0c";    //Validator strin
 var express = require('express');
 var serveStatic = require('serve-static');
 var bodyParser = require('body-parser');
+var _ = require('lodash');
 
 var app = express();
 app.use(serveStatic(__dirname));
+
+var knownHosts = ['/192.168.3.63', '/192.168.3.71'];
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -26,13 +30,18 @@ app.get('/meraki', function (req, res) {
 
 app.post('/meraki', function (req, res) {
   try {
+    var observations = req.body.data.observations;
+
+    var matchingObservations = _.filter(observations, function (item) {
+      return _.contains(knownHosts, item.ipv4);
+    });
+    console.log('=== MATCHING OBSERVATIONS', JSON.stringify(matchingObservations));
     var deviceData = req.body.data;
 
-    if (req.body.secret === secret) {
+    if (req.body.secret === secret && matchingObservations.length) {
       clients.forEach(function (c) {
-        c.write('data: ' + JSON.stringify({data: req.body}) + '\n\n');
-      })
-
+        c.write('data: ' + JSON.stringify({data: matchingObservations, type: req.body.type}) + '\n\n');
+      });
     } else {
       console.log("invalid secret from  " + req.connection.remoteAddress);
     }
