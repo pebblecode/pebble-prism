@@ -29,12 +29,9 @@ app.post('/meraki', function (req, res) {
     var deviceData = req.body.data;
 
     if (req.body.secret === secret) {
-
-      for (i = 0; i < deviceData.probing.length; i++) {
-        clients.forEach(function (c) {
-          c.write('data: ' + JSON.stringify({data: deviceData.probing[i]}) + '\n\n');
-        })
-      }
+      clients.forEach(function (c) {
+        c.write('data: ' + JSON.stringify({data: req.body}) + '\n\n');
+      })
 
     } else {
       console.log("invalid secret from  " + req.connection.remoteAddress);
