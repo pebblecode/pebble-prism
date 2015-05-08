@@ -8,24 +8,23 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script type="text/javascript">
 
-      $(document).ready(function () {
-        var container = $('#data');
+      var container = $('#data');
+      var es = new EventSource('http://localhost:9201/subscribe');
 
-        var es = new EventSource('./subscribe');
+      es.addEventListener('open', function (e) {
+        console.log('connected');
+      }, false);
 
-        es.onopen = function (e) {};
+      es.addEventListener('message', function (e) {
+        var msg = JSON.parse(e.data);
+        container.append('<pre>' + JSON.stringify(msg.data) + '</pre>');
+      }, false);
 
-        es.onmessage = function (e) {
-          var msg = JSON.parse(e.data);
-          container.append('<pre>' + JSON.stringify(msg.data) + '</pre>');
-        };
-
-        es.onerror = function (e) {
-          if (e.readyState == EventSource.CLOSED) {
-            console.log("connection closed");
-          }
-        };
-      });
+      es.addEventListener('error', function (e) {
+        if (e.readyState == EventSource.CLOSED) {
+          console.log("connection closed");
+        }
+      }, false);
 
     </script>
   </body>
