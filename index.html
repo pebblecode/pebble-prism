@@ -1,0 +1,32 @@
+<html>
+  <head></head>
+  <body>
+    <h1>HELLO</h1>
+
+    <div id="data"></div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+      $(document).ready(function () {
+        var container = $('#data');
+
+        var es = new EventSource('./subscribe');
+
+        es.onopen = function (e) {};
+
+        es.onmessage = function (e) {
+          var msg = JSON.parse(e.data);
+          container.append('<pre>' + JSON.stringify(msg.data) + '</pre>');
+        };
+
+        es.onerror = function (e) {
+          if (e.readyState == EventSource.CLOSED) {
+            console.log("connection closed");
+          }
+        };
+      });
+
+    </script>
+  </body>
+</html>
