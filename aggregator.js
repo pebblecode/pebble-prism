@@ -34,7 +34,7 @@ exports.update = function update(networkData) {
     }
   });
 
-  data[networkData.apMac] = {
+  data[networkData.data.apMac] = {
     byOS: devicesByOS,
     coords: deviceCoordinates
   };
