@@ -67,16 +67,14 @@ apLayerGroup.addTo(map);
 
 var devicesLayerGroup = L.layerGroup(null);
 
-var es = new EventSource('/subscribe');
+var es = new EventSource('http://pebble-prism.herokuapp.com/subscribe');
 es.onmessage = function (e) {
   devicesLayerGroup.clearLayers();
 
   var msg = JSON.parse(e.data);
 
-  console.log('GOT', msg.deviceCoordinates.length, 'COORDINATES');
-
-  _.each(msg.deviceCoordinates, function (coord) {
-    var marker = L.circleMarker([coord.lat, coord.lng]).addTo(map);
+  _.each(msg.data.deviceCoordinates, function (coord) {
+    var marker = L.circleMarker([coord.lat, coord.lng], {radius: coord.unc}).addTo(map);
     devicesLayerGroup.addLayer(marker);
   });
 };
