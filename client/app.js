@@ -72,6 +72,9 @@ es.onmessage = function (e) {
   devicesLayerGroup.clearLayers();
 
   var msg = JSON.parse(e.data);
+
+  console.log('GOT', msg.deviceCoordinates.length, 'COORDINATES');
+
   _.each(msg.deviceCoordinates, function (coord) {
     var marker = L.circleMarker([coord.lat, coord.lng]).addTo(map);
     devicesLayerGroup.addLayer(marker);
