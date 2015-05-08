@@ -1,7 +1,7 @@
 // 192.168.3.63
 
 var listenport = process.env.PORT || 9201;                      //TCP listening port
-var secret = 'xxxxxx';                      //Secret that you chose in the Meraki dashboard
+var secret = 'pebbleprism';                      //Secret that you chose in the Meraki dashboard
 var validator = "5637aaef252addd4d6682c7aff3ee877d018ac0c";    //Validator string that is shown in the Meraki dashboard
 
 var express = require('express');
