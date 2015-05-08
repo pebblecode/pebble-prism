@@ -23,7 +23,8 @@ exports.update = function update(networkData) {
   var devicesByOS = groupBy('os', networkData.data.observations);
 
   _.forEach(networkData.data.observations, function (item) {
-    if (item.clientMac) {
+
+    if (item && item.location) {
       deviceCoordinates.push({
         clientMac: item.clientMac,
         lat: item.location.lat,
