@@ -67,7 +67,7 @@ apLayerGroup.addTo(map);
 
 var devicesLayerGroup = L.layerGroup(null);
 
-var es = new EventSource('./subscribe');
+var es = new EventSource('/subscribe');
 es.onmessage = function (e) {
   devicesLayerGroup.clearLayers();
   var msg = JSON.parse(e.data);
