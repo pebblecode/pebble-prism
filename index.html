@@ -9,7 +9,7 @@
     <script type="text/javascript">
 
       var container = $('#data');
-      var es = new EventSource('http://localhost:9201/subscribe');
+      var es = new EventSource('/subscribe');
 
       es.addEventListener('open', function (e) {
         console.log('connected');
